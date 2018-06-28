@@ -15,12 +15,12 @@ subject(:daniel) {described_class.new('Daniel')}
     end
   end
 
-  describe "#attack" do
-    it "damage the player" do
-      expect(daniel).to receive(:receive_damage)
-      jay.attack(daniel)
-    end
-  end
+  # describe "#attack" do
+  #   it "damage the player" do
+  #     expect(daniel).to receive(:receive_damage)
+  #     jay.attack(daniel)
+  #   end
+  # end
 
   describe "#receive_damage" do
     it "reduce the player hit points by 10" do
